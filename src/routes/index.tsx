@@ -3,6 +3,7 @@ import { FileText, Linkedin } from "lucide-react";
 import {
   ActionLink,
   CardBlock,
+  DocsLink,
   GithubLink,
   LiveLink,
   ProjectCard,
@@ -208,7 +209,7 @@ function Index() {
               title="Premium Tool Request Automation"
               tech={["Power Automate"]}
               actions={
-                <GithubLink href="https://github.com/mariajimenezchiquinquira-bot/Automatizacion_Solicitud_Herramientas_Premium" />
+                <DocsLink href="#" />
               }
             >
               <CardBlock label="Problem">

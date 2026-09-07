@@ -209,7 +209,7 @@ function Index() {
               title="Premium Tool Request Automation"
               tech={["Power Automate"]}
               actions={
-                <DocsLink href="#" />
+                <DocsLink href="/docs/premium-tool-request-automation-technical-documentation.pdf" />
               }
             >
               <CardBlock label="Problem">

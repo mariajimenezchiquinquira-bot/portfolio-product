@@ -114,7 +114,7 @@ function Index() {
               title="Nu Split — Shared Payments Feature"
               tech={["Notion", "Jira", "Tableau", "Scrum"]}
               actions={
-                <TableauLink href="https://public.tableau.com/app/profile/maria.jimenez7845/viz/NuSplit-DashboardBI/Dashboard1" />
+                <TableauLink href="https://public.tableau.com/app/profile/maria.jimenez7845/viz/NuSplit-DashboardBI/Dashboard1?publish=yes" />
               }
             >
               <CardBlock label="Problem">

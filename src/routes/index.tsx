@@ -47,6 +47,19 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+// NO ELIMINAR: proyecto "Premium Tool Request Automation" guardado en reserva
+// (retirado del portafolio en sept 2026, pendiente de volver a mostrarse).
+// Esta referencia existe solo para que herramientas de limpieza de archivos
+// no usados no borren estas imágenes ni sus imports.
+const RESERVED_PREMIUM_TOOL_REQUEST_AUTOMATION_ASSETS = [
+  paFormulario,
+  paFlow,
+  paRequestMail,
+  paRequestNotify,
+  paApprovedMail,
+];
+void RESERVED_PREMIUM_TOOL_REQUEST_AUTOMATION_ASSETS;
+
 const SKILLS = [
   "Figma",
   "Python",

@@ -23,6 +23,7 @@ import nuSplitJiraBoard from "@/assets/projects/nusplit-jira-board.png";
 import nuSplitNotionCover from "@/assets/projects/nusplit-notion-cover.png";
 import nuSplitNotionTimelineBacklog from "@/assets/projects/nusplit-notion-timeline-backlog.png";
 import nuSplitTableau from "@/assets/projects/nusplit-tableau-dashboard.png";
+import churnDashboard from "@/assets/projects/churn-capital-loss-dashboard-v2.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -203,80 +204,32 @@ function Index() {
               />
             </ProjectCard>
             <ProjectCard
-              title="Premium Tool Request Automation"
-              tech={["Power Automate"]}
+              title="Customer Churn & Capital Loss Analysis"
+              tech={["Power BI", "DAX", "Data Visualization"]}
               actions={
-                <DocsLink href="/docs/premium-tool-request-automation-technical-documentation.pdf" />
+                <GithubLink href="https://github.com/mariajimenezchiquinquira-bot/PowerBi-Customer-Churn-Capital-Loss-Analysis" />
               }
             >
               <CardBlock label="Problem">
-                Requesting premium tools like AI, design, or productivity software was a scattered
-                process across emails and messages, with manual approvals and little traceability.
+                A bank was experiencing customer attrition without understanding its main drivers
+                or impact on capital.
               </CardBlock>
-              <CardBlock label="Solution">
-                I developed a Power Automate flow that centralizes and automates the entire process.
-                Users submit requests through Microsoft Forms with details like tool, justification,
-                cost, and license duration. The flow then routes the request for approval, notifies
-                the requester of the outcome, and logs every decision automatically.
+              <CardBlock label="Approach">
+                I conducted an exploratory analysis in Power BI and, through visualizations and
+                comparisons, identified the patterns that best explained attrition and the
+                highest-risk segments.
               </CardBlock>
-              <CardBlock label="Result">
-                Turned a manual, scattered process into a structured, automated, and fully traceable
-                workflow, reducing operational overhead and ensuring every request is properly
-                documented.
+              <CardBlock label="Results">
+                The bank faces capital leakage concentrated in high-balance customers, generating a
+                significant financial impact. The primary warning signal is inactivity,
+                particularly in Germany, which registers the highest churn rate.
               </CardBlock>
-              <div className="mx-auto grid w-full max-w-3xl gap-3 sm:grid-cols-2">
-                <a
-                  href={paFlow}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group block overflow-hidden rounded-md sm:row-span-2"
-                >
-                  <img
-                    src={paFlow}
-                    alt="Power Automate flow running successfully"
-                    loading="lazy"
-                    className="h-full w-full bg-white object-contain transition-transform duration-300 group-hover:scale-[1.02]"
-                  />
-                </a>
-                {[
-                  { src: paFormulario, alt: "Microsoft Forms premium tool request form" },
-                  { src: paRequestMail, alt: "Approval email with the request details" },
-                ].map((image) => (
-                  <a
-                    key={image.src}
-                    href={image.src}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="group block overflow-hidden rounded-md"
-                  >
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      loading="lazy"
-                      className="aspect-video w-full bg-white object-contain transition-transform duration-300 group-hover:scale-[1.02]"
-                    />
-                  </a>
-                ))}
-                {[
-                  { src: paApprovedMail, alt: "Approval confirmation email for the administrator" },
-                  { src: paRequestNotify, alt: "Notification that the request was approved" },
-                ].map((image) => (
-                  <a
-                    key={image.src}
-                    href={image.src}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="group block overflow-hidden rounded-md"
-                  >
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      loading="lazy"
-                      className="aspect-video w-full bg-white object-contain transition-transform duration-300 group-hover:scale-[1.02]"
-                    />
-                  </a>
-                ))}
-              </div>
+              <img
+                src={churnDashboard}
+                alt="Power BI dashboard: Customer Churn and Capital Loss Analysis"
+                loading="lazy"
+                className="mx-auto w-full max-w-3xl rounded-md bg-white object-contain"
+              />
             </ProjectCard>
           </div>
         </section>

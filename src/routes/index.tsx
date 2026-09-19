@@ -61,7 +61,6 @@ const RESERVED_PREMIUM_TOOL_REQUEST_AUTOMATION_ASSETS = [
 void RESERVED_PREMIUM_TOOL_REQUEST_AUTOMATION_ASSETS;
 
 const SKILLS = [
-  "Figma",
   "Python",
   "SQL",
   "Power BI",
@@ -208,10 +207,10 @@ function Index() {
               </CardBlock>
               <ProjectImageGrid
                 images={[
-                  { src: zipptoCollections, alt: "Zippto flashcard study view" },
-                  { src: zipptoLanding, alt: "Zippto landing page" },
                   { src: zipptoFront, alt: "Zippto dashboard view" },
                   { src: zipptoBack, alt: "Zippto flashcard flip view" },
+                  { src: zipptoCollections, alt: "Zippto flashcard study view" },
+                  { src: zipptoLanding, alt: "Zippto landing page" },
                 ]}
               />
             </ProjectCard>

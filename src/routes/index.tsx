@@ -19,10 +19,10 @@ import zipptoLanding from "@/assets/projects/zippto-landing.png";
 import zipptoCollections from "@/assets/projects/zippto-collections.png";
 import zipptoFront from "@/assets/projects/zippto-flashcard-front.png";
 import zipptoBack from "@/assets/projects/zippto-flashcard-back.png";
-import nuSplitJiraBoard from "@/assets/projects/nusplit-jira-board.png";
-import nuSplitNotionCover from "@/assets/projects/nusplit-notion-cover.png";
-import nuSplitNotionTimelineBacklog from "@/assets/projects/nusplit-notion-timeline-backlog.png";
-import nuSplitTableau from "@/assets/projects/nusplit-tableau-dashboard.png";
+import payraSplitJiraBoard from "@/assets/projects/payrasplit-jira-board.png";
+import payraSplitNotionCover from "@/assets/projects/payrasplit-notion-cover.png";
+import payraSplitNotionTimelineBacklog from "@/assets/projects/payrasplit-notion-timeline-backlog.png";
+import payraSplitTableau from "@/assets/projects/payrasplit-tableau-dashboard.png";
 import churnDashboard from "@/assets/projects/churn-capital-loss-dashboard-v2.png";
 
 export const Route = createFileRoute("/")({
@@ -122,26 +122,27 @@ function Index() {
           </h2>
           <div className="mt-8 grid gap-6">
             <ProjectCard
-              title="Nu Split — Shared Payments Feature"
+              title="Payra Split — Shared Payments Feature"
               tech={["Notion", "Jira", "Tableau", "Scrum"]}
               actions={
-                <TableauLink href="https://public.tableau.com/app/profile/maria.jimenez7845/viz/NuSplit-DashboardBI/Dashboard1?publish=yes" />
+                <TableauLink href="https://public.tableau.com/app/profile/maria.jimenez7845/viz/SplitlySplit-DashboardBI/Dashboard1?publish=yes" />
               }
             >
               <CardBlock label="Problem">
-                Splitting shared expenses can be a hassle. When one person pays for everyone, they
-                have to calculate how much each person owes and then tell each friend how much to
-                send, often using a calculator, WhatsApp, or another app.
+                Splitting shared expenses can quickly become a headache. When one person pays for
+                everyone, or Laura pays for the food while Felipe pays for the beers, you have to
+                keep track of multiple payments, figure out who owes whom, and settle everything at
+                the end.
               </CardBlock>
               <CardBlock label="Solution">
-                I developed a simulated BI/product case study for "Nu Split," a concept feature that
-                lets Nubank users split expenses, request payments, and see who has paid. I planned
-                the product lifecycle in Notion, managed sprints in Jira, and built a Tableau
-                dashboard using simulated data to analyze adoption and completion rates.
+                "Payra Split", a feature that allows Payra users to split expenses instantly and
+                keep track of who has already paid. The project included planning, execution, and
+                post-launch tracking. Notion was used for product planning, Jira to manage execution
+                through sprints and tasks, and Tableau to analyze adoption and usage after launch.
               </CardBlock>
               <CardBlock label="Result">
-                An end-to-end case connecting product planning, agile execution, and BI to measure a
-                feature from concept to post-launch analysis.
+                A simpler way to split expenses, track payments, and see who owes whom, supported by
+                adoption and usage metrics to evaluate the feature's performance.
               </CardBlock>
               <div className="flex flex-col gap-4">
                 <div>
@@ -150,8 +151,8 @@ function Index() {
                   </p>
                   <ProjectImageGrid
                     images={[
-                      { src: nuSplitNotionCover, alt: "Nu Split Notion roadmap overview" },
-                      { src: nuSplitNotionTimelineBacklog, alt: "Nu Split Notion timeline and backlog board" },
+                      { src: payraSplitNotionCover, alt: "Payra Split Notion roadmap overview" },
+                      { src: payraSplitNotionTimelineBacklog, alt: "Payra Split Notion timeline and backlog board" },
                     ]}
                   />
                 </div>
@@ -162,7 +163,7 @@ function Index() {
                   <div className="mx-auto w-full max-w-2xl">
                     <ProjectImageGrid
                       images={[
-                        { src: nuSplitJiraBoard, alt: "Nu Split Jira Scrum board" },
+                        { src: payraSplitJiraBoard, alt: "Payra Split Jira Scrum board" },
                       ]}
                       columns={1}
                     />
@@ -174,7 +175,7 @@ function Index() {
                   </p>
                   <ProjectImageGrid
                     images={[
-                      { src: nuSplitTableau, alt: "Nu Split Tableau usage and adoption dashboard" },
+                      { src: payraSplitTableau, alt: "Payra Split Tableau usage and adoption dashboard" },
                     ]}
                     columns={1}
                   />
@@ -183,8 +184,8 @@ function Index() {
             </ProjectCard>
 
             <ProjectCard
-              title="Zippto — Custom Flashcards"
-              tech={["HTML", "CSS", "JavaScript", "Supabase", "Vercel", "Claude Code"]}
+              title="Zippto — Personalized Flashcards"
+              tech={["UI/UX Design", "Supabase", "Vercel", "Claude Code"]}
               actions={
                 <>
                   <LiveLink href="https://zippto.vercel.app/landing.html" label="Try Zippto" />
@@ -193,49 +194,46 @@ function Index() {
               }
             >
               <CardBlock label="Problem">
-                Traditional flashcard tools can make studying harder than necessary, with complex
-                setups, unintuitive imports, and confusing review systems.
+                Traditional flashcard tools can make studying more complicated than it needs to be,
+                with complex configurations, unintuitive imports, and confusing review systems.
               </CardBlock>
               <CardBlock label="Solution">
-                I built Zippto, a multi-user web app where users sign in with Google, create custom
-                collections, and design flashcards for any subject. Its 3-deck spaced repetition
-                system prioritizes cards that need the most practice, keeping study sessions focused
-                without unnecessary complexity.
+                "Zippto", a web application designed to simplify flashcard creation and review.
+                Users can create custom collections and study any topic through a three-deck spaced
+                repetition system that prioritizes the cards that need the most practice.
               </CardBlock>
               <CardBlock label="Result">
-                A fully functional, deployed web app with user-specific data, authentication, a
-                custom UI, and intuitive study flows — demonstrating a complete product build from
-                UI/UX design to deployment.
+                A simpler and more intuitive study experience, without complex configurations or
+                confusing review systems.
               </CardBlock>
               <ProjectImageGrid
                 images={[
                   { src: zipptoLanding, alt: "Zippto landing page" },
-                  { src: zipptoCollections, alt: "Zippto collections view" },
-                  { src: zipptoBack, alt: "Zippto flashcard back side" },
-                  { src: zipptoFront, alt: "Zippto flashcard front side" },
+                  { src: zipptoCollections, alt: "Zippto flashcard study view" },
+                  { src: zipptoBack, alt: "Zippto flashcard flip view" },
+                  { src: zipptoFront, alt: "Zippto dashboard view" },
                 ]}
               />
             </ProjectCard>
             <ProjectCard
-              title="Customer Churn & Capital Loss Analysis"
+              title="Analysis — Customer Churn & Capital Loss"
               tech={["Power BI", "DAX", "Data Visualization"]}
               actions={
                 <GithubLink href="https://github.com/mariajimenezchiquinquira-bot/PowerBi-Customer-Churn-Capital-Loss-Analysis" />
               }
             >
               <CardBlock label="Problem">
-                A bank was experiencing customer attrition without understanding its main drivers
-                or impact on capital.
+                A bank was experiencing high customer churn without a clear understanding of its
+                main drivers or the financial impact associated with it.
               </CardBlock>
               <CardBlock label="Approach">
-                I conducted an exploratory analysis in Power BI and, through visualizations and
-                comparisons, identified the patterns that best explained attrition and the
-                highest-risk segments.
+                An exploratory analysis was conducted in Power BI to identify churn patterns,
+                compare customer segments, and detect customers at higher risk of leaving.
               </CardBlock>
               <CardBlock label="Results">
-                The bank faces capital leakage concentrated in high-balance customers, generating a
-                significant financial impact. The primary warning signal is inactivity,
-                particularly in Germany, which registers the highest churn rate.
+                The analysis showed that capital loss was concentrated among customers with high
+                account balances, creating a significant financial impact. Inactivity emerged as
+                the main warning signal, particularly in Germany, which had the highest churn rate.
               </CardBlock>
               <img
                 src={churnDashboard}
@@ -260,7 +258,7 @@ function Index() {
             id="skills"
             className="relative text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl"
           >
-            Skills
+            Skills & Tools
             <span className="mt-2 block h-1 w-14 rounded-full bg-primary" aria-hidden="true" />
           </h2>
           <ul className="relative mt-8 flex flex-wrap gap-2">
@@ -278,7 +276,7 @@ function Index() {
 
       <footer className="border-t border-border bg-secondary/50">
         <div className="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-10 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-sm text-muted-foreground">© 2026 María José Jiménez</p>
+          <p className="text-sm text-muted-foreground">© María José Jiménez</p>
           <div className="flex gap-5">
             <a
               href="https://www.linkedin.com/in/mariajosejimenez-ingenieraindustrial/"

@@ -125,7 +125,7 @@ function Index() {
               title="Payra Split — Shared Payments Feature"
               tech={["Notion", "Jira", "Tableau", "Scrum"]}
               actions={
-                <TableauLink href="https://public.tableau.com/app/profile/maria.jimenez7845/viz/SplitlySplit-DashboardBI/Dashboard1?publish=yes" />
+                <TableauLink href="https://public.tableau.com/app/profile/maria.jimenez7845/viz/PayraSplitDashboardBIEN/Dashboard1?publish=yes" />
               }
             >
               <CardBlock label="Problem">
@@ -208,10 +208,10 @@ function Index() {
               </CardBlock>
               <ProjectImageGrid
                 images={[
-                  { src: zipptoLanding, alt: "Zippto landing page" },
                   { src: zipptoCollections, alt: "Zippto flashcard study view" },
-                  { src: zipptoBack, alt: "Zippto flashcard flip view" },
+                  { src: zipptoLanding, alt: "Zippto landing page" },
                   { src: zipptoFront, alt: "Zippto dashboard view" },
+                  { src: zipptoBack, alt: "Zippto flashcard flip view" },
                 ]}
               />
             </ProjectCard>
